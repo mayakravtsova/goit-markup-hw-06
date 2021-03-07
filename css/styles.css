@@ -11,7 +11,7 @@
   --card-set-gap: 30px;
   --icon: #AFB1B8;
   --footer-social-links: rgba(255, 255, 255, 0.1);
-  --time-duration: 250ms;
+  --time-duration: 2250ms;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   --signup-form-button: #188CE8;
 } 
@@ -678,31 +678,36 @@ textarea {
   border: 1px solid rgba(0, 0, 0, 0.1);
   fill: #000000;
   outline: none;
+  transition: fill var(--time-duration) var(--timing-function);
 }
 
 .modal-close-div :hover, .modal-close-div :focus {
   fill: var(--text-accent);
   cursor: pointer;
+  transition: fill var(--time-duration) var(--timing-function);
 }
 
-.signup-form-ul :hover, .signup-form-ul :focus {
+/* .signup-form-ul :hover, .signup-form-ul :focus {
   cursor: pointer;
   border-color: var(--text-accent);
   outline: none;
-}
+} */
 
 .signup-div :hover, .signup-div :focus {
   cursor: pointer;
   border-color: var(--text-accent);
   outline: none;
+  transition: border-color var(--time-duration) var(--timing-function);
 }
 
 .signup-div :hover > .signup-icon {
   fill: var(--text-accent);
+  transition: fill var(--time-duration) var(--timing-function);
 }
 
 .signup-div:focus > .signup-icon {
   fill: var(--text-accent);
+  transition: fill var(--time-duration) var(--timing-function);
 }
 
 /* .signup-icon :hover  {
@@ -791,6 +796,7 @@ textarea {
   width: 100%;
   height: 40px;
   padding-left: 42px;
+  transition: border-color var(--time-duration) var(--timing-function);
 }
 
 .signup-input.comment-input {
@@ -811,6 +817,7 @@ textarea {
   transform: translateY(-50%);
   left: 12px;
   fill: var(--text-main-dark);
+  transition: fill var(--time-duration) var(--timing-function);
 }
 
 .signup-div-button {
@@ -836,29 +843,6 @@ textarea {
   margin: 0;
   padding: 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /**********  PORTFOLIO  *************/
 
