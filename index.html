@@ -424,9 +424,69 @@
             <use href="./images/icons.svg#close-button"></use>
           </svg>
         </button>
+
+
+        
+        <form class="signup-form" name="signup_form" autocomplete="on" novalidate>
+          <b class="signup-title">Оставьте свои данные, мы вам перезвоним</b>
+
+          <div class="signup-div">
+            <label for="signup-username" class="signup-label">Имя</label>
+            <div class="signup-input-div">
+             <input type="text" class="signup-input" name="" id="signup-username"/>
+             <svg class="signup-icon" width="18px" height="18px">
+               <use href="./images/icons.svg#modal-person"></use>
+             </svg>
+            </div> 
+          </div>
+
+          <div class="signup-div">
+            <label for="signup-phone" class="signup-label">Телефон</label>
+            <div class="signup-input-div">
+              <input type="tel" class="signup-input" name="" id="signup-phone"/>
+              <svg class="signup-icon" width="18px" height="18px">
+                <use href="./images/icons.svg#modal-phone"></use>
+              </svg>
+            </div>  
+          </div>
+          
+          <div class="signup-div">
+            <label for="signup-email" class="signup-label">Почта</label>
+            <div class="signup-input-div">
+              <input type="email" class="signup-input" name="" id="signup-email"/>
+              <svg class="signup-icon" width="18px" height="18px">
+                <use href="./images/icons.svg#modal-email"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="signup-div comment-div">
+            <label for="signup-comment" class="signup-label">Комментарий</label>
+            <textarea class="signup-input comment-input" name="" placeholder="Введите текст" id="signup-comment"></textarea>
+          </div>
+
+          <div class="signup-div agreement-div">
+            <input type="checkbox" class="signup-input-agreement" name="" value="agree" id="signup-agreement"/>
+            <label for="signup-agreement" class="signup-label agreement-label">Соглашаюсь с рассылкой и принимаю <a class="agreement-link" href="#">Условия договора</a></label> 
+          </div>
+
+          <div class="signup-div-button">
+            <button class="signup-button">Отправить</button>
+          </div>
+          
+              
+        </form>
+
+
       </div>
     </div>
+
     <script src="./js/modal.js"></script>
+
+
+
+
+    
     <!-- <script>
       (() => {
         const header = document.querySelector('.head-section');
