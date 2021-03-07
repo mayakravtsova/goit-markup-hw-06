@@ -209,39 +209,6 @@ textarea {
   margin-right: 70px;
 }
 
-.footer-social-links-block p {
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  margin: 12px 0 20px 0;
-}
-
-.footer-social-link-li {
-  fill: var(--main-light);
-  background-color: var(--footer-social-links);
-  border-radius: 50%;
-  outline: none;
-  /* transition: background-color var(--time-duration) var(--timing-function); */
-}
-
-.footer-social-link-li :visited {
-  fill: var(--main-light);
-  background-color: var(--footer-social-links);
-}
-
-.footer-social-link-li :hover, 
-.footer-social-link-li :focus{
-  background-color: var(--text-accent);
-  border-radius: 50%;
-  outline: none;
-  transition: background-color var(--time-duration) var(--timing-function);
-}
-
-.footer-social-link-li .social-link-a :visited {
-  fill: var(--main-light);
-}
-
 .container.footer ul {
   display: flex;
 }
@@ -276,6 +243,90 @@ textarea {
 .footer-contacts:focus {
   color: var(--text-accent);
   transition: color var(--time-duration) var(--timing-function);
+}
+
+
+.footer-social-links-block {
+  margin-right: 93px;
+}
+
+
+.footer-topic {
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin: 12px 0 20px 0;
+}
+
+.footer-social-link-li {
+  fill: var(--main-light);
+  background-color: var(--footer-social-links);
+  border-radius: 50%;
+  outline: none;
+  /* transition: background-color var(--time-duration) var(--timing-function); */     
+}
+
+.footer-social-link-li :visited {
+  fill: var(--main-light);
+  background-color: var(--footer-social-links);
+}
+
+.footer-social-link-li :hover, 
+.footer-social-link-li :focus{
+  background-color: var(--text-accent);
+  border-radius: 50%;
+  outline: none;
+  transition: background-color var(--time-duration) var(--timing-function);
+}
+
+.footer-social-link-li .social-link-a :visited {
+  fill: var(--main-light);
+}
+
+.footer-signup-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.footer-signup-input {
+  width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: var(--text-accent-transparent);
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  background-color: var(--background-dark);
+  margin-right: 12px;
+}
+
+.footer-signup-button {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  color: currentColor;
+  background-color: var(--text-accent);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: currentColor;
+}
+
+.footer-signup-button svg {
+  margin-left: 10px;
+  fill: currentColor; 
+
 }
 
 /********************* MAIN (index.html)*************************/
@@ -629,6 +680,37 @@ textarea {
   outline: none;
 }
 
+.modal-close-div :hover, .modal-close-div :focus {
+  fill: var(--text-accent);
+  cursor: pointer;
+}
+
+.signup-form-ul :hover, .signup-form-ul :focus {
+  cursor: pointer;
+  border-color: var(--text-accent);
+  outline: none;
+}
+
+.signup-div :hover, .signup-div :focus {
+  cursor: pointer;
+  border-color: var(--text-accent);
+  outline: none;
+}
+
+.signup-div :hover > .signup-icon {
+  fill: var(--text-accent);
+}
+
+.signup-div:focus > .signup-icon {
+  fill: var(--text-accent);
+}
+
+/* .signup-icon :hover  {
+  fill: var(--text-accent);
+  background-color: var(--text-accent);
+  color: var(--text-accent);
+} */
+
 /* .modal-close-button :hover, .modal-close-button :focus {
   fill: var(--text-accent);
   border-color: var(--text-accent);
@@ -670,12 +752,13 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center; 
+  margin-bottom: 30px; 
 }
 
 .signup-input-agreement {
   width: 16px;
   height: 15px;
+  margin-right: 7px;
 }
 
 .signup-label {
@@ -687,11 +770,15 @@ textarea {
 }
 
 .signup-label.agreement-label {
-  margin-bottom: 0;
-  
+  margin-bottom: 0; 
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
+}
+
+.agreement-link {
+  color: var(--text-accent);
+  text-decoration: underline;
 }
 
 .signup-input {
@@ -710,10 +797,6 @@ textarea {
   letter-spacing: 0.01em;
 }
 
-.signup-div.agreement-div {
-  margin-bottom: 30px;
-}
-
 .signup-input-div {
   position: relative;
 }
@@ -723,6 +806,7 @@ textarea {
   top: 50%;
   transform: translateY(-50%);
   left: 12px;
+  fill: var(--text-main-dark);
 }
 
 .signup-div-button {
@@ -744,13 +828,9 @@ textarea {
   background: var(--signup-form-button);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border-color: var(--text-accent);
   margin: 0;
   padding: 0;
-}
-
-.comment ::placeholder {
-  /* color: rgba(117, 117, 117, 0.5); */
-  color: red;
 }
 
 

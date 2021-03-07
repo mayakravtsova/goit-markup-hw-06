@@ -382,7 +382,7 @@
             </address>
           </li>   
           <li class="footer-social-links-block">        
-              <p>Присоединяйтесь</p>
+              <p class="footer-topic">Присоединяйтесь</p>
               <ul class="social-link">
                 <li class="footer-social-link-li">
                   <a class="social-link-a" href="#">
@@ -414,79 +414,84 @@
                 </li>
               </ul>        
           </li>  
+
+          <li>
+            <p class="footer-topic">Подпишитесь на рассылку</p>
+            <div class="footer-signup-div">
+            
+               <div>
+                <input type="email" class="footer-signup-input" name="footer-signup-input" placeholder="E-mail"/>
+               </div>
+              <div>
+                <button type="submit" class="footer-signup-button">Подписаться
+                  <svg width="18px" height="18px">
+                    <use href="./images/icons.svg#icon-send"></use>
+                  </svg>
+                </button>
+              </div>  
+            </div>
+          </li>
         </ul>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="modal-close-button" data-modal-close>
-          <svg width="18px" height="18px">
-            <use href="./images/icons.svg#close-button"></use>
-          </svg>
-        </button>
-
-
-        
-        <form class="signup-form" name="signup_form" autocomplete="on" novalidate>
-          <b class="signup-title">Оставьте свои данные, мы вам перезвоним</b>
-
-          <div class="signup-div">
-            <label for="signup-username" class="signup-label">Имя</label>
-            <div class="signup-input-div">
-             <input type="text" class="signup-input" name="" id="signup-username"/>
-             <svg class="signup-icon" width="18px" height="18px">
-               <use href="./images/icons.svg#modal-person"></use>
-             </svg>
-            </div> 
-          </div>
-
-          <div class="signup-div">
-            <label for="signup-phone" class="signup-label">Телефон</label>
-            <div class="signup-input-div">
-              <input type="tel" class="signup-input" name="" id="signup-phone"/>
-              <svg class="signup-icon" width="18px" height="18px">
-                <use href="./images/icons.svg#modal-phone"></use>
-              </svg>
-            </div>  
-          </div>
-          
-          <div class="signup-div">
-            <label for="signup-email" class="signup-label">Почта</label>
-            <div class="signup-input-div">
-              <input type="email" class="signup-input" name="" id="signup-email"/>
-              <svg class="signup-icon" width="18px" height="18px">
-                <use href="./images/icons.svg#modal-email"></use>
-              </svg>
-            </div>
-          </div>
-
-          <div class="signup-div comment-div">
-            <label for="signup-comment" class="signup-label">Комментарий</label>
-            <textarea class="signup-input comment-input" name="" placeholder="Введите текст" id="signup-comment"></textarea>
-          </div>
-
-          <div class="signup-div agreement-div">
-            <input type="checkbox" class="signup-input-agreement" name="" value="agree" id="signup-agreement"/>
-            <label for="signup-agreement" class="signup-label agreement-label">Соглашаюсь с рассылкой и принимаю <a class="agreement-link" href="#">Условия договора</a></label> 
-          </div>
-
-          <div class="signup-div-button">
-            <button class="signup-button">Отправить</button>
-          </div>
-          
-              
-        </form>
-
-
+        <div class="modal-close-div">
+          <button class="modal-close-button" data-modal-close>
+            <svg width="18px" height="18px">
+              <use href="./images/icons.svg#close-button"></use>
+            </svg>
+          </button>
+        </div>
+          <form class="signup-form" name="signup_form" autocomplete="on" novalidate>
+            <ul class="signup-form-ul">
+              <li>
+                <b class="signup-title">Оставьте свои данные, мы вам перезвоним</b>
+              </li>
+              <li class="signup-div">
+                <label for="signup-username" class="signup-label">Имя</label>
+                <div class="signup-input-div">
+                 <input type="text" class="signup-input" name="" id="signup-username"/>
+                 <svg class="signup-icon" width="18px" height="18px">
+                   <use href="./images/icons.svg#modal-person"></use>
+                 </svg>
+                </div> 
+              </li>
+              <li class="signup-div">
+                <label for="signup-phone" class="signup-label">Телефон</label>
+                <div class="signup-input-div">
+                  <input type="tel" class="signup-input" name="" id="signup-phone"/>
+                  <svg class="signup-icon" width="18px" height="18px">
+                    <use href="./images/icons.svg#modal-phone"></use>
+                  </svg>
+                </li>  
+              </li>          
+              <li class="signup-div">
+                <label for="signup-email" class="signup-label">Почта</label>
+                <div class="signup-input-div">
+                  <input type="email" class="signup-input" name="" id="signup-email"/>
+                  <svg class="signup-icon" width="18px" height="18px">
+                    <use href="./images/icons.svg#modal-email"></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="signup-div comment-div">
+                <label for="signup-comment" class="signup-label">Комментарий</label>
+                <textarea class="signup-input comment-input" name="" placeholder="Введите текст" id="signup-comment"></textarea>
+              </li>
+              <li class="signup-div agreement-div">
+                <input type="checkbox" class="signup-input-agreement" name="" value="agree" id="signup-agreement"/>
+                <label for="signup-agreement" class="signup-label agreement-label">Соглашаюсь с рассылкой и принимаю <a class="agreement-link" href="#">Условия договора</a></label> 
+              </li>
+              <li class="signup-div-button">
+                <button type="submit" class="signup-button">Отправить</button>
+              </li>
+            </ul>                 
+          </form>
+        </div>
       </div>
     </div>
-
     <script src="./js/modal.js"></script>
-
-
-
-
-    
     <!-- <script>
       (() => {
         const header = document.querySelector('.head-section');
