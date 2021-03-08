@@ -48,7 +48,7 @@
     <main>
       <section class="title-section">
         <div class="container">
-        <h1 class="title">Эффективные решения <br> для вашего бизнеса</h1>
+        <h1 class="title">Эффективные решения для вашего бизнеса</h1>
         <button class="title-button" data-modal-open>Заказать услугу</button>
         </div>
       </section>  
@@ -370,6 +370,7 @@
     </main>   
     <footer class="footer-section">
       <div class="container footer">
+
         <ul>
           <li class="footer-address-block">
             <a href="./index.html" class="logo footer-logo"><span class="logo-accent">Web</span>Studio</a>
@@ -443,6 +444,7 @@
             </svg>
           </button>
         </div>
+        <div>
           <form class="signup-form" name="signup_form" autocomplete="on" novalidate>
             <ul class="signup-form-ul">
               <li>
@@ -480,8 +482,22 @@
                 <textarea class="signup-input comment-input" name="signup-comment" placeholder="Введите текст" id="signup-comment"></textarea>
               </li>
               <li class="signup-div agreement-div">
-                <input type="checkbox" class="signup-input-agreement" name="signup-agreement" value="agree" id="signup-agreement"/>
-                <label for="signup-agreement" class="signup-label agreement-label">Соглашаюсь с рассылкой и принимаю <a class="agreement-link" href="#">Условия договора</a></label> 
+                <label class="signup-label agreement-label">
+                  <input type="checkbox" class="signup-checkbox-default" name="signup-agreement" value="agree"/>
+                  <!-- <span class="signup-checkbox"> -->
+                    <svg class="signup-checkbox-icon" width="16px" height="15px">
+                      <use href="./images/icons.svg#full-check"></use>
+                    </svg>
+                  <!-- </span> -->
+                  <span>Соглашаюсь с рассылкой и принимаю <a class="agreement-link" href="#">Условия договора</a></span>
+                </label>
+                <!-- <input type="checkbox" class="signup-checkbox-default" name="signup-agreement" value="agree" id="signup-agreement"/>
+                <span class="signup-checkbox">
+                  <svg class="signup-checkbox-icon" width="11px" height="8px">
+                    <use href="./images/icons.svg#check"></use>
+                  </svg>
+                </span>
+                <label for="signup-agreement" class="signup-label agreement-label">Соглашаюсь с рассылкой и принимаю <a class="agreement-link" href="#">Условия договора</a></label>  -->
               </li>
               <li class="signup-div-button">
                 <button type="submit" class="signup-button">Отправить</button>
