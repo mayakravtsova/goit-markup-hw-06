@@ -207,14 +207,15 @@ textarea {
 
 .container.footer {
   align-items: center;
+  display: flex;
 }
 
 .footer-address-block {
   margin-right: 70px;
 }
 
-.container.footer ul {
-  display: flex;
+.footer-div {
+  margin-bottom: auto;
 }
 
 .footer-contacts-list {
